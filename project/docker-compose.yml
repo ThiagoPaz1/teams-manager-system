@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  db_test_laravel:
+    image: postgres
+    container_name: db_test_laravel
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: laravel_test
+    ports:
+      - 5433:5432
